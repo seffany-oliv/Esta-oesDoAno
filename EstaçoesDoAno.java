@@ -18,12 +18,14 @@ public class EstaçoesDoAno {
          num = entrada.nextInt();
 
          //Processamento
-        if ((mes == 3) && (num >=20)|| (mes == 4) || (mes == 5) && (num <= 19 )){
+        if ((mes == 3) && (num >=20)|| (mes == 4) || (mes == 5) || (mes == 6) && (num <= 19 )){
             System.out.println("É outono");
-        } else if ((mes == 6) &&  (num >= 20) || (mes == 7) || (mes == 7) ||(mes == 8) || (mes == 9) && (num <= 21)){
+        } else if ((mes == 6) &&  (num >= 20) || (mes == 7) ||(mes == 8) || (mes == 9) && (num <= 21)){
             System.out.println("É Inverno");
-        }else if ((mes == 9) && (num >= 21 ) || (mes= 10) || (mes == 11) || (mes == 12) && (num <=20)){
-        System.out.print("É Primavera")
+        } else if ((mes == 9) && (num >=21 ) || (mes== 10) || (mes == 11) || (mes == 12) && (num <=20)){
+            System.out.print("É Primavera");
+        } else if ((mes == 12) && (num >=22) || (mes == 1) || (mes == 2) || (mes == 3)){
+            System.out.println("É verão");
         }
     }
 }
